@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI TCET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="homepagestyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+<body style="background-color: rgb(0, 0, 0)">
+<!-- <body style="background: linear-gradient(to bottom, rgb(0, 15, 43),rgb(5, 5, 165),rgb(3, 3, 252), rgb(0, 102, 204), rgb(20, 183, 248));"> -->
+    <div class="cursor"></div>
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.querySelector('.cursor');
+            
+            cursor.style.left = `${e.pageX - cursor.offsetWidth / 2}px`;
+            cursor.style.top = `${e.pageY - cursor.offsetHeight / 2}px`;
+        });
+    </script>
+
+
+
+
+
+
+    <!-- Navbar -->
+     <!-- <div class="container"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="./index.html">
+                    <img src="https://csi.tcetmumbai.in/csi%20logo.png" alt="Logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 justify-content-lg-evenly text-center">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <img src="https://csi.tcetmumbai.in/csi%20logo.png" alt="Logo" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./aboutourteam/index.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="./aboutwc/aboutwc.html">Working Committee</a></li>
+                                <li><a class="dropdown-item" href="./aboutprevcore/aboutprevcore.html">Previous-core</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Event Calendar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./eventpage/zephyreventpage.html">Zephyr</a></li>
+                                <li><a class="dropdown-item" href="./alleventpage/alleventpage.html">Past Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Magazine
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nimbus 2023</a></li>
+                                <li><a class="dropdown-item" href="#">Bulletin 2021</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./spon/spon.html">Sponsorship</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+    <!-- </div> -->
+    <div class="atf-col-1">
+        <div data-w-id="7ad75875-cd0c-a531-39f7-6b88ba906a22" class="atf-h1-wrapper">
+            <h1 class="heading-style-h1" id="dbms-text">
+                <span class="shorform" style="font-family: Protest Guerrilla; font-size: 8rem;">CSI</span>
+                <span class="fullform">COMPUTER SOCIETY OF INDIA</span>
+            </h1>
+        </div>
+        <h2>
+            <div class="typing-line">
+                <span class="text-to-type" style="display: inline-block;">CHALLENGE • SEIZE • INFLUENCE</span>
+            </div>
+        </h2>
+    </div>    
+
+    <script>
+        function typeEffect(element, speed) {
+            let text = element.innerHTML;
+            element.innerHTML = "";
+            
+            let i = 0;
+            function typing() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, speed);
+                } else {
+                    element.classList.remove('typing-cursor');
+                }
+            }
+            typing();
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            let targetElement = document.querySelector(".text-to-type");
+            typeEffect(targetElement, 50); 
+        });
+    </script>
+    
+    
+    
+    <div class="challenges">
+        <div class="col1">
+            <img src="https://csi.tcetmumbai.in/assets/imgs/home/home.jpg" alt="csitcet">
+        </div>
+        <div class="col2">
+            <p id="typing-text" style="text-align: justify;">CSI-TCET is the student branch of the Computer Society of India (CSI) at Thakur College of Engineering and Technology (TCET), Mumbai. The mission of CSI is to facilitate research, knowledge sharing, learning and innovation, career enhancement and nurturing new talents. Today, CSI has members from all over the nation including famous industry leaders, brilliant scientists and dedicated academicians. CSI-TCET has more than 250 registered members and the chapter is growing day by day. Activities are being continuously planned and conducted and CSI-TCET has further gone on to become one of the most active student organizations at TCET.</p>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
+    
+        gsap.from(".text-to-type", {
+            opacity: 0,
+            x: -60,
+            duration: 0.7,
+            ease: "elastic",
+            delay: 0.3,
+        });
+    
+        gsap.from("#dbms-text", {
+            scale: 0.2,
+            opacity: 0,
+            duration: 1.8,
+            ease: "bounce",
+            delay: 1.0,
+        });
+    
+        gsap.fromTo(".typing-line",
+            { textShadow: "0 -20px 30px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255), 0 20px 40px rgba(0, 255, 255, 0.6)" },
+            {
+                textShadow: "0 20px 30px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255), 0 -20px 40px rgba(0, 255, 255, 0.6)",
+                duration: 2,
+                repeat: -1,
+                yoyo: true,
+                ease: "back"
+            }
+        );
+    
+        gsap.from(".challenges .col1 img", {
+            y: 50,
+            opacity: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".challenges .col1 img",
+                start: "top 80%",
+                toggleActions: "play none none none"
+            }
+        });
+    
+        gsap.to("#typing-text", {
+            text: {
+                value: "CSI-TCET is the student branch of the Computer Society of India (CSI) at Thakur College of Engineering and Technology (TCET), Mumbai. The mission of CSI is to facilitate research, knowledge sharing, learning and innovation, career enhancement and nurturing new talents. Today, CSI has members from all over the nation including famous industry leaders, brilliant scientists and dedicated academicians. CSI-TCET has more than 250 registered members and the chapter is growing day by day. Activities are being continuously planned and conducted and CSI-TCET has further gone on to become one of the most active student organizations at TCET."
+            },
+            scrollTrigger: {
+                trigger: ".challenges",  
+                start: "top 80%",        
+                toggleActions: "play none none none", 
+                once: true
+            },
+            duration: 10, 
+            ease: "power2.inOut"
+        });
+    </script>
+       
+
+    <!-- Gallery Heading -->
+    <div class="text-center">
+        <div class="gallery-heading">
+            <p class="fs-1 text-white">Our Gallery</p>
+        </div>
+    <!-- Carousel Section -->
+    <div class="carousel-div">
+        <div class="leftpan button"><span class="material-symbols-outlined">
+            chevron_left
+            </span></div>
+        <div class="slide-cantainer">
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe2.jpeg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe3.jpeg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe4.jpeg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe5.jpeg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe7.jpg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe8.jpeg); background-size: cover;"></div>
+        <div class="slide" style="background-image: url(https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe9.JPG); background-size: cover;"></div>
+        </div>
+        <div class="rightpan button"><span class="material-symbols-outlined">
+            chevron_right
+            </span></div>
+    </div>
+    </div>
+
+    <!-- Upcoming Events Heading -->
+    <div class="text-center">
+        <div class="events-heading">
+            <p class="fs-1 text-white">Upcoming Events</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card large">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 1" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 1</p>
+        </div>
+      
+        <div class="card small">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 2" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 2</p>
+        </div>
+      
+        <div class="card small">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 3" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 3</p>
+        </div>
+      
+        <div class="card large">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 4" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 4</p>
+        </div>
+      
+        <div class="card small contact-card">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 5" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 5</p>
+        </div>
+      
+        <div class="card small">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 6" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 6</p>
+        </div>
+      
+        <div class="card small contact-card">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/pastevents/pe1.png" alt="Event 7" style="width: 100%; height: 100%; object-fit: cover;">
+          <p class="event-name">Event 7</p>
+        </div>
+      </div>
+    <!-- Find Us Heading -->
+    <div class="text-center">
+        <div class="findus-heading">
+            <p class="fs-1 text-white">
+                <i class="fa-solid fa-location-dot icon-colour" aria-hidden="true"></i>
+                Find Us
+            </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".text-center", {
+    y: 20,
+    opacity: 0,
+    // scale: 0,
+    delay: 0.8,
+    duration: 0.9,
+    scrollTrigger: {
+        scroll:"body",
+        trigger: ".text-center", 
+        start: "top 80%",       
+        // end: "top 30%",        
+        // markers: true           
+    }
+});
+    </script>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Address and Map Container -->
+            <div class="map-container">
+                <!-- Address Section -->
+                <div class="address">
+                    <h1 style="color: #fff">
+                        Thakur College of Engineering and Technology
+                    </h1>
+                    <div class="add" style="margin: 15px 0; color: #fff">
+                        Thakur Campus, Kandivali East, Gate No:5, Mumbai: 400101
+                    </div>
+                    <div class="Email" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-envelope icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Email: </span>officialcsitect@gmail.com
+                    </div>
+                    <div class="callraj" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-phone icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Raj Desai: </span>09136126474
+                    </div>
+                    <div class="callpragya" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-phone icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Pragya Shukla: </span>09920981062
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7458389923036!2d72.87241691490318!3d19.206300287013224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647569d%3A0xc0aec329c82d3555!2sThakur%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1664616468748!5m2!1sen!2sin"
+                        style="width: 100%; height: 300px; border: 0; border-radius: 8px" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <hr class="animated" />
+
+            <!-- Social Media Links -->
+            <div class="social-contain">
+                <div class="both-container">
+                    <!-- Let's Connect Section -->
+                    <div class="letsConnect">
+                        <h4 style="color: #fff">Let's Connect</h4>
+                        <a class="github" href="https://github.com/tcetcsi" target="_blank">
+                            <i class="fa-brands fa-github icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Github</h6>
+                        </a>
+                        <a class="linkedin" href="https://in.linkedin.com/company/csi-tcet" target="_blank">
+                            <i class="fa-brands fa-linkedin-in icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">LinkedIn</h6>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Section -->
+                    <div class="Media">
+                        <h4 style="color: #fff">Social Media</h4>
+                        <a class="Instagram" href="http://instagram.com/csitcet" target="_blank">
+                            <i class="fa-brands fa-instagram icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Instagram</h6>
+                        </a>
+                        <a class="Facebook" href="https://m.facebook.com/100067509726614/" target="_blank">
+                            <i class="fa-brands fa-facebook-f icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Facebook</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div style="text-align: center; margin-top: 20px">
+            <p style="color: #fff">
+                &copy; 2023 Thakur College of Engineering and Technology. All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+    <canvas>
+        
+    </canvas>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="starfield.js"></script>
+</body>
+
+</html>

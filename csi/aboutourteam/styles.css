@@ -1,0 +1,200 @@
+/* do not change create own different css file */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply this CSS to the divs that are blocking the canvas */
+.overlay-div {
+    pointer-events: none;
+}
+/* Apply this CSS to the divs that are blocking the canvas */
+.centered {
+    pointer-events: none;
+}
+
+/* Apply this CSS to allow interactions within the cards while still letting the canvas receive events */
+.centered .card {
+    pointer-events: auto;
+}
+
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure canvas is behind other content */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure the navigation and content are above the canvas */
+}
+
+.centered {
+    position: relative;
+    z-index: 1; /* Ensure the cards are above the canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust based on your nav height */
+}
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000; /* Background color for better visibility of stars */
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly dark background */
+    padding: 15px 30px; /* Added padding for a more spacious look */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Optional: limits the width for a centered look */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.logo {
+    height: 50px; /* Increased height for better visibility */
+    margin-right: 20px; /* Space between the logo and the nav links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px; /* Added horizontal padding for better spacing */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #00bcd4; /* Highlight color */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background change */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Positioned below the link text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #00bcd4; /* Highlight color */
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    transform: scaleX(1);
+}
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Ensure scrolling is enabled */
+    font-family: Arial, sans-serif;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    position: relative;
+    pointer-events: none;
+    height: auto; /* Ensure height does not restrict scrolling */
+}
+
+.centered .card {
+    pointer-events: auto;
+}
+.card {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card:hover {
+    background-color: transparent !important;
+}
+
+.card .shadow, .card .image.background, .card .image.cutout {
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

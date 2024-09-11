@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjusted gap for smaller cards */
+  height: 100%;
+  padding: 0 4rem; /* Add padding on the right and left */
+
+}
+
+.card {
+  position: relative;
+  height: 18rem; /* Adjusted height for smaller cards */
+  width: 18rem;  /* Adjusted width for 1:1 aspect ratio */
+  aspect-ratio: 1 / 1;
+  color: #ffffff;
+  perspective: 50rem;
+}
+
+.card .shadow {
+  position: absolute;
+  inset: 0;
+  background: var(--url);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  filter: blur(1.5rem) saturate(0.9); /* Reduced blur for smaller cards */
+  box-shadow: 0 -1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.7); /* Reduced shadow for smaller cards */
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 1.5rem, -1.5rem); /* Adjusted for smaller cards */
+}
+
+.card .image {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%), var(--url);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: var(--url);
+          mask-image: var(--url);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+.card .image.background {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 0rem);
+}
+
+.card .image.cutout {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 3rem) scale(0.92); /* Adjusted for smaller cards */
+  z-index: 4;
+  object-fit: fill;
+}
+
+.card .content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  inset: 0;
+  padding: 2rem; /* Adjusted padding for smaller cards */
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 5rem); /* Adjusted for smaller cards */
+  z-index: 4;
+}
+
+.card .content h2 {
+  font-size: 1rem; /* Adjusted font size */
+  font-weight: 700;
+  margin-bottom: 0.25rem; /* Reduced margin to decrease gap */
+  text-shadow: 0 0 0.5rem rgba(0, 128, 128, 0.7); /* Dark teal shadow */
+}
+
+.card .content p {
+  gap: 0.5rem;
+  font-weight: 300;
+  margin-top: 0; /* Remove margin-top to reduce gap */
+  text-shadow: 0 0 0.5rem rgba(0, 128, 128, 0.7); /* Dark teal shadow */
+}
+
+.card::after, .card::before {
+  content: "";
+  position: absolute;
+  inset: 1rem; /* Adjusted border inset for smaller cards */
+  border: #003a4d 0.4rem solid; /* Adjusted border width for smaller cards */
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 1.5rem); /* Adjusted for smaller cards */
+}
+
+.card::before {
+  z-index: 4;
+}
+
+.card.border-left-behind::before {
+  border-left: transparent;
+}
+
+.card.border-right-behind::before {
+  border-right: transparent;
+}
+
+.card.border-bottom-behind::before {
+  border-bottom: transparent;
+}
+
+h2 {
+  font-size: 1rem; /* Adjusted font size for smaller cards */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Reduced text shadow for smaller cards */
+}
+
+p {
+  
+  display: flex;
+  justify-content: space-between; /* Pushes the icons to the right */
+
+  font-weight: 300;
+  
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Reduced text shadow for smaller cards */
+}
+
+.card .content .social-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  text-shadow: 0 0 0.5rem rgba(0, 128, 128, 0.7); /* Add shadow like the text */
+  transition: color 0.3s ease;
+}
+
+.card .content .social-icon:hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+.card .content .social-icon:nth-child(3):hover {
+  color: #e4405f; /* Instagram color */
+}
+
+.card .content .social-icon .icon {
+  width: 16px; /* Adjust size for the Instagram SVG icon */
+  height: 16px;
+  
+}
+
+.card .content .social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Vertically aligns the icons */
+  gap: 0.4rem; /* No space between icons */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center; /* Ensures each icon is centered vertically */
+  margin: 0; /* Removes default margin */
+}
+
+.social-icon img {
+  width: 16px; /* Adjust size as needed */
+  height: 16px; /* Adjust size as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+
+
+
+
+
+
+
+.navbar {
+  /* background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);  */
+  width: 99vw;
+  box-shadow: 4px 4px 10px black; 
+  border-radius: 10px; 
+  /* border: 1px solid rgba(255, 255, 255, 0.18);  */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.418); 
+  border-radius: 10px;
+}
+
+
+
+
+
+.navbar-nav img {
+  max-width: 100px;
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

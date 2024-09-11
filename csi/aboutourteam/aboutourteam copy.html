@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSI TCET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="zephyrevent.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="corecard.css" />
+    <link rel="stylesheet" href="aboutuscontent.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body style="background-color: rgb(0, 0, 0)">
+<!-- <body style="background: linear-gradient(to bottom, rgb(0, 15, 43),rgb(5, 5, 165),rgb(3, 3, 252), rgb(0, 102, 204), rgb(20, 183, 248));"> -->
+    
+    <!-- Navbar -->
+     <!-- <div class="container"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="https://csi.tcetmumbai.in/csi%20logo.png" alt="Logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 justify-content-lg-evenly text-center">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <img src="https://csi.tcetmumbai.in/csi%20logo.png" alt="Logo" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                                <li><a class="dropdown-item" href="#">Working Committee</a></li>
+                                <li><a class="dropdown-item" href="#">Previous-core</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Event Calendar
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="zephyrEvent/events.html">Zephyr</a></li>
+                                <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Magazine
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nimbus 2023</a></li>
+                                <li><a class="dropdown-item" href="#">Bulletin 2021</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sponsorship</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- </div> -->
+
+
+
+    <h1 class="white-text centered-text">ABOUT US</h1>
+
+    <div class="message-section">
+        <div class="message">
+            <h2 class="nameofhod">MESSAGE - BRANCH COUNCELLOR</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.</p>
+        </div>
+        <div class="message-image">
+            <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/facultyincharge/dean.jpg" alt="Branch Councellor">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    
+
+    <div class="message-section reverse">
+        <div class="message messageforhod">
+            <h2 class="nameofhod">MESSAGE - BRANCH HOD</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum lorem eget felis euismod, vitae convallis quam egestas.</p>
+          </div>
+        <div class="message-image hodphoto">
+            <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/facultyincharge/HOD.jpg" alt="Branch HOD">
+        </div>
+    </div>
+
+
+
+    <br>
+ 
+
+    <h1 class="white-text centered-text">Faculty Incharge</h1>
+
+
+    <section class="faculty-incharge">
+      <div class="faculty-card">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/facultyincharge/dean.jpg" alt="Name 1">
+          <div class="faculty-card-content">
+              <h3>Name 1</h3>
+              <p>Placeholder Text</p>
+          </div>
+      </div>
+      <div class="faculty-card">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/facultyincharge/HOD.jpg" alt="Name 2">
+          <div class="faculty-card-content">
+              <h3>Name 2</h3>
+              <p>Placeholder Text</p>
+          </div>
+      </div>
+      <div class="faculty-card">
+          <img src="https://tcetcsi.github.io/tcetcsi/assets/imgs/facultyincharge/dean.jpg" alt="Name 3">
+          <div class="faculty-card-content">
+              <h3>Name 3</h3>
+              <p>Placeholder Text</p>
+          </div>
+      </div>
+  </section>
+  
+
+    <h1 class="white-text centered-text">MEET OUR CORE</h1>
+
+    <div class="centered">
+        <!-- Ten identical cards -->
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>
+            <div class="image background" style="--url: url('https://wallpapercave.com/wp/wp6615286.jpg')"></div>
+            <div class="image cutout" style="--url: url('asset/rudra.png')"></div>
+            <div class="content">
+                <h2>Chairperson</h2>
+                <p>
+                    Rudrapratap Singh
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-right-behind border-bottom-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/DC0MbxS/m-full.png')"></div>
+            <div class="image background" style="--url: url('https://i.ibb.co/ZdGBm4K/m-background.png')"></div>
+            <div class="image cutout" style="--url: url('asset/isha.png')"></div>
+            <div class="content">
+                <h2>Vice Chairperson</h2>
+                <p>Isha Kotecha
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
+            <div class="image background" style="--url: url('https://static.vecteezy.com/system/resources/previews/001/420/980/original/light-blue-gradient-blur-background-vector.jpg')"></div>
+            <div class="image cutout" style="--url: url('asset/shlok.png')"></div>
+            <div class="content">
+                <h2>Secretary</h2>
+                <p>
+                    Shlok Mishra
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>
+            <div class="image background" style="--url: url('https://c4.wallpaperflare.com/wallpaper/870/696/923/blur-gaussian-wallpaper-preview.jpg')"></div>
+            <div class="image cutout" style="--url: url('asset/deval.png')"></div>
+            <div class="content">
+                <h2>Event Manager</h2>
+                <p>
+                    Deval Saliya
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-right-behind border-bottom-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/DC0MbxS/m-full.png')"></div>
+            <div class="image background" style="--url: url('https://i.ibb.co/ZdGBm4K/m-background.png')"></div>
+            <div class="image cutout" style="--url: url('asset/sudeep.png')"></div>
+            <div class="content">
+                <h2>Treasurer</h2>
+                <p>
+                    Sudeep Sarkar
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
+            <div class="image background" style="--url: url('asset/corebackground.png')"></div>
+            <div class="image cutout" style="--url: url('asset/shashank.png')"></div>
+            <div class="content">
+                <h2>Sponsorship Head</h2>
+                <p>
+                    Shashank Singh
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>
+            <div class="image background" style="--url: url('asset/corebackground.png')"></div>
+            <div class="image cutout" style="--url: url('asset/kushagra.png')"></div>
+            <div class="content">
+                <h2>Publication Head</h2>
+                <p>
+                    Kushagra Shrivastav
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-right-behind border-bottom-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/DC0MbxS/m-full.png')"></div>
+            <div class="image background" style="--url: url('asset/corebackground.png')"></div>
+            <div class="image cutout" style="--url: url('asset/tarun.png')"></div>
+            <div class="content">
+                <h2>Webmaster</h2>
+                <p>
+                    Tarun Asthana
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/gSBp82C/b-full.png')"></div>
+            <div class="image background" style="--url: url('asset/corebackground.png')"></div>
+            <div class="image cutout" style="--url: url('asset/anjali.png')"></div>
+            <div class="content">
+                <h2>Technical Head</h2>
+                <p>
+                    Anjali Prajapati
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-left-behind">
+            <div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>
+            <div class="image background" style="--url: url('asset/corebackground.png')"></div>
+            <div class="image cutout" style="--url: url('asset/vedika.png')"></div>
+            <div class="content">
+                <h2>Event Coordinator</h2>
+                <p>
+                    Vedika Gugale
+                    <span class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="asset/linkedinlogo.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <img src="asset/instagramlogo.png" alt="Instagram" class="icon">
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="corecard.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Address and Map Container -->
+            <div class="map-container">
+                <!-- Address Section -->
+                <div class="address">
+                    <h1 style="color: #fff">
+                        Thakur College of Engineering and Technology
+                    </h1>
+                    <div class="add" style="margin: 15px 0; color: #fff">
+                        Thakur Campus, Kandivali East, Gate No:5, Mumbai: 400101
+                    </div>
+                    <div class="Email" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-envelope icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Email: </span>officialcsitect@gmail.com
+                    </div>
+                    <div class="callraj" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-phone icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Raj Desai: </span>09136126474
+                    </div>
+                    <div class="callpragya" style="margin: 15px 0; color: #fff">
+                        <i class="fa-solid fa-phone icon-colour" aria-hidden="true" style="color: #fff"></i>
+                        <span style="font-weight: bolder">Pragya Shukla: </span>09920981062
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7458389923036!2d72.87241691490318!3d19.206300287013224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647569d%3A0xc0aec329c82d3555!2sThakur%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1664616468748!5m2!1sen!2sin"
+                        style="width: 100%; height: 300px; border: 0; border-radius: 8px" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <hr class="animated" />
+
+            <!-- Social Media Links -->
+            <div class="social-contain">
+                <div class="both-container">
+                    <!-- Let's Connect Section -->
+                    <div class="letsConnect">
+                        <h4 style="color: #fff">Let's Connect</h4>
+                        <a class="github" href="https://github.com/tcetcsi" target="_blank">
+                            <i class="fa-brands fa-github icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Github</h6>
+                        </a>
+                        <a class="linkedin" href="https://in.linkedin.com/company/csi-tcet" target="_blank">
+                            <i class="fa-brands fa-linkedin-in icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">LinkedIn</h6>
+                        </a>
+                    </div>
+
+                    <!-- Social Media Section -->
+                    <div class="Media">
+                        <h4 style="color: #fff">Social Media</h4>
+                        <a class="Instagram" href="http://instagram.com/csitcet" target="_blank">
+                            <i class="fa-brands fa-instagram icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Instagram</h6>
+                        </a>
+                        <a class="Facebook" href="https://m.facebook.com/100067509726614/" target="_blank">
+                            <i class="fa-brands fa-facebook-f icon-colour" style="color: #fff"></i>
+                            <h6 style="color: #fff">Facebook</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div style="text-align: center; margin-top: 20px">
+            <p style="color: #fff; text-align: center;">
+                &copy; 2023 Thakur College of Engineering and Technology. All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+    <canvas></canvas>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="../starfield.js"></script>
+</body>
+
+</html>
